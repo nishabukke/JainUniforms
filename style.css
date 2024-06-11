@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.heading-font{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+body{
+    font-family: 'Hind', sans-serif;
+    color: #242424;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #FCF6F5FF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+h2.heading-font{
+    font-size: 42px;
+}
+
+.common-btn{
+    color: #fff;
+    background-color: #c10e00;
+    border: 1px solid #c10e00;
+    border-radius: 50px;
+    padding: 12px 20px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+}
+
+.common-btn span{
+    margin-left: 10px;
+}
+
+.common-btn:hover{
+    background-color: transparent;
+    color: #c10e00;
+}
+
+.section--lg{
+    padding: 90px 0px 90px 0px;
+}
+
+.section-content{
+    font-size: 22px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+/* header css start */
+
+.header{
+    background-color: #fff;
+}
+
+.upper-header, .lower-header{
+    border-bottom: 1px solid #dfe2ed;
+}
+
+.upper-header .container, .lower-header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.right-upper-header{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.right-upper-header i{
+    font-size: 22px;
+    transition: all .2s ease;
+}
+
+.right-upper-header i:hover{
+    color: #c10e00;
+    cursor: pointer;
+}
+
+.lower-header .container{
+    padding: 5px 0px;
+}
+
+.left-lower-header img{
+    width: 80px;
+}
+
+.right-lower-header{
+    display: flex;
+    align-items: center;    
+}
+
+.right-lower-header .nav-link{
+    padding: 0 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* header css end */
+
+/* home banner css start */
+
+.home-hero{
+    padding: 120px 0px 50px 0px;
+    background-image: url('images/slide.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.home-hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.home-hero-content h1{
+    font-size: 64px;
+    width: 60%;
+}
+
+.home-hero-content p{
+    font-size: 24px;
+}
+
+/* home banner css end */
+
+
+/* industries section css start */
+
+.industries-inner{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+}
+
+.industry-item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.industry-item img{
+    width: 60px;
+    height: 60px;
+}
+
+.industry-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* industries section css end */
+
+
+/* products section css start */
+
+.products-section{
+    position: relative;
+}
+
+.dots-img{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    z-index: -5;
+}
+
+.products-inner{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+    row-gap: 50px;
+}
+
+.product-item{
+    border-radius: 10px;
+    background-size: cover;
+    position: relative;
+    height: 250px;
+    transition: all .2s;
+}
+
+.product-item:first-child{
+    background-image: url('images/product-uniform.avif');
+}
+
+.product-item:nth-child(2){
+    background-image: url('images/product-shoes.jpg');
+}
+
+.product-item:nth-child(3){
+    background-image: url('images/product-blazer.jpg');
+}
+
+.product-item:nth-child(4){
+    background-image: url('images/product-apron.jpg');
+}
+
+.product-item:nth-child(5){
+    background-image: url('images/safety-jacket.jpg');
+}
+
+.product-overlay{
+    background-color: #a33737bf;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.product-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    z-index: 2;
+    padding: 40px;
+    top: 50%;
+    bottom: auto;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    transition: all .3s;
+}
+
+.product-content-2{
+    opacity: 0;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    transform: translateY(-40%) translateX(-50%);
+}
+
+.product-content-2 .common-btn{
+    margin: 0 auto;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all .3s ease;
+}
+
+.product-content-2 .common-btn:hover{
+    background: none !important;
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 1);
+}
+
+.product-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 12px 20px rgba(0, 0, 0, .1);
+}
+
+.product-item:hover .product-overlay{
+    border-top: 2px solid #c10e00;
+    border-bottom: 0px solid #c10e00;
+    border-left: 0px solid #c10e00;
+    border-right: 0px solid #c10e00;
+}
+
+.product-item:hover .product-content{
+    opacity: 0;
+    transform: translateY(-60%) translateX(-50%);
+}
+
+.product-item:hover .product-content-2{
+    opacity: 1;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+
+.product-content img{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.product-content h3{
+    color: #fff;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.products-section .common-btn{
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* products section css end */
+
+
+/* how we work section css start */
+
+.how-we-work-inner{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.hww-item{
+    position: relative;
+}
+
+.hww-item h3{
+    margin: 20px 0px;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.hww-item h3 span{
+    color: #c10e00;
+}
+
+.hww-item .block-number{
+    position: absolute;
+    font-size: 160px;
+    line-height: 160px;
+    opacity: .20;
+    top: 0;
+    font-weight: 700;
+    z-index: -1;
+}
+
+/* how we work section css end */
+
+/* contatc banner section css start */
+
+.contact-banner-section{
+    background-color: #c10e00;
+    color: #fff;
+    padding: 60px 0px;
+    font-family: 'Poppins';
+}
+
+.contact-banner-section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-banner-section .container p{
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.contact-banner-section .container .common-btn{
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: all .3s;
+}
+
+.contact-banner-section .container .common-btn:hover{
+    background-color: #fff;
+    color: #c10e00;
+}
+
+/* contact banner section css end */
+
+
+/* about section css start */
+
+.about-inner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 60px;
+    align-items: center;
+}
+
+.left-about{
+    position: relative;
+}
+
+.about-dots{
+    position: absolute;
+    left: -10%;
+    bottom: -15%;
+    z-index: -2;
+}
+
+.left-about .about-img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.right-about{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-content{
+    font-size: 22px
+}
+
+/* about section css end */
+
+
+/* brands logo slider css start */
+
+.brands-slider .swiper-wrapper{
+    padding: 50px;
+}
+
+.brands-slider .swiper-pagination-bullet-active{
+    width: 13px;
+    height: 13px;
+    background: #fff;
+    border: 2px solid #c10e00;
+}
+
+.brands-slider .swiper-pagination-bullet {
+    display: inline-block;
+    align-items: center;
+    margin: 0 10px !important;
+}
+
+.brands-slider .swiper-slide img{
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, .05);
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* brands logo slider css end */
+
+
+/* contact section css start */
+
+.contact-inner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    align-items: center;
+}
+
+.contact-links-group{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.left-contact{
+    position: relative;
+}
+
+.contact-dots{
+    position: absolute;
+    right: 20%;
+    top: 30%;
+    z-index: -2;
+}
+
+.contact-links{
+    display: flex;
+    gap: 15px;
+    align-items: baseline;
+}
+
+.contact-links i{
+    font-size: 20px;
+    color: #a33737bf;
+}
+
+.contact-links p.fw-bold{
+    font-size: 22px;
+}
+
+.right-contact input, .right-contact textarea{
+    color: #4c4c4c;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    padding: 10px 20px;
+}
+
+.contact-form{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 20px;
+}
+
+.input-group{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-form .common-btn{
+    color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    border-color: #c10e00;
+    justify-content: center;
+}
+
+
+/* contact section css end */
+
+/* footer css start */
+
+.footer{
+    background-color: #fff;
+    padding-top: 90px;
+}
+
+.footer-inner{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.footer-item:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-item img{
+    width: 80px;
+}
+
+.social-icons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-icons i{
+    font-size: 24px;
+    color: #4c4c4c;
+}
+
+.social-icons i:hover{
+    color: #c10e00;
+}
+
+.footer-item ul{
+    margin-top: 30px;
+}
+
+.footer-item ul li{
+    padding: 5px 0px;
+    font-size: 17px;
+    transition: all .2s ease;
+}
+
+.footer-item ul li:hover a{
+    color: #c10e00;
+    font-weight: 500;
+    padding-left: 10px;
+    transition: all .2s ease;
+}
+
+.footer-item ul li a span{
+    margin-right: 10px;
+}
+
+.lower-footer{
+    margin-top: 50px;
+    color: #4c4c4c;
+    font-size: 13px;
+    padding: 15px 0px;
+    border-top: 1px solid #eaeaea;
+}
+
+/* footer css end */
