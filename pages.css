@@ -509,6 +509,9 @@ display: block;
     justify-content: center;
 }
 
+.contact-form .common-btn:hover{
+    color: #c10e00;
+}
 
 /* contact section css end */
 

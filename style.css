@@ -131,7 +131,7 @@ h2.heading-font{
 /* home banner css start */
 
 .home-hero{
-    padding: 120px 0px 50px 0px;
+    padding: 120px 0px 150px 0px;
     background-image: url('images/slide.png');
     background-size: cover;
     background-position: center;
@@ -194,7 +194,7 @@ h2.heading-font{
 .dots-img{
     position: absolute;
     top: 0%;
-    left: 50%;
+    right: 10%;
     z-index: -5;
 }
 
@@ -538,6 +538,10 @@ h2.heading-font{
     margin: 0 auto;
     border-color: #c10e00;
     justify-content: center;
+}
+
+.contact-form .common-btn:hover{
+    color: #c10e00;
 }
 
 
